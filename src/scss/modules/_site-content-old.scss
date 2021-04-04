@@ -1,0 +1,107 @@
+main section.content {
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  
+  @include bp(small) {
+    flex-direction: column;
+  }
+  @include bp(large) {
+    flex-direction: row;
+  }
+
+  .even-column {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    @include bp(small) {
+      width: 100%;
+      height: 50%;
+    }
+    @include bp(large) {
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  .content--copy {
+    text-align: center;
+  }
+
+  .content--bg-image {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 120%;
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+.content-1 .content--bg-image {
+  background-image: url('../images/swan-wharf.jpg');
+}
+.content-2 .content--bg-image {
+  background-image: url('../images/GS-dancefloor-med.png');
+}
+.content-3 .content--bg-image {
+  background-image: url('../images/dhaba-logo-1200.jpg');
+}
+.content-4 .content--bg-image {
+  background-image: url('../images/BC-bar-med.png');
+}
+.content-5 .content--bg-image {
+  background-image: url('../images/Houghton-Fest-BC-23.jpg');
+}
+.content-6 .content--bg-image {
+  background-image: url('../images/GS-Canvas-Tote-2-med.jpg');
+}
+
+/* This re orderd the sections so they sit on top of each other in the right order on small screens.*/
+@include bp(small) {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+   order: 2;
+ }
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+
+
+  .dhaba-logo {
+    width: 200px;
+    height: 73px;
+    margin-bottom: 1rem;
+    margin-left: -10px;
+   }
+}
+
+.lineParent {
+  overflow: hidden;
+}

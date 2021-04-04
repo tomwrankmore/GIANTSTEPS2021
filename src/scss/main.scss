@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+main {
+    background-color: #fff;
+}
+
+section.content {
+    background-color: #fff; 
+    transition: background-color 0.875s linear;
+}
+
+// section.active {
+//     background-color: #efe4e3;
+// }
+
+iframe {
+    margin-bottom: 2rem;
+}

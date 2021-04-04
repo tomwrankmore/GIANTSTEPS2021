@@ -1,0 +1,40 @@
+/* Vendors */
+@import './vendor/locomotiveScroll';
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Vendor */
+
+/* Modules */
+@import './modules/header';
+@import './modules/site-content';
+@import './modules/_section-intro';
+@import './modules/_modal';
+
+
+/* Browser specific styles */
+@import 'dirty/hacks';
+
+/* General Page styles */
+@import 'main';
+
+
+
+
+
+
+
+
